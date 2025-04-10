@@ -10,6 +10,9 @@
         }
 
         body {
+            background-color: #000; /* Preto puro */
+            color: #fff; /* Texto branco para contraste */
+            margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
