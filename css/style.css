@@ -23,7 +23,7 @@
             height: 300px;
             overflow: hidden;
             background-color: var(--dark-color);
-            color: var(--white);
+            color: var(--dark-color);
             text-align: center;
             padding: 2rem;
             box-shadow: var(--shadow);
