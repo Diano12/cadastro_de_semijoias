@@ -59,6 +59,10 @@
         }
 
         .carousel-item img {
+            width: auto;           /* Largura automática */
+            height: 400px;           /* Ocupa 90% da altura do carrossel */
+            max-height: 500px;     /* Altura máxima */
+            object-fit: contain;   /* Mantém proporção sem cortar */
             position: absolute;
             top:40%;
             left: 50%;
