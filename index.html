@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRO</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item" data-tab="aneis">
+                    <img src="images/aneis.jpg" alt="Anéis e Correntes Grossas">
+                    <div class="carousel-caption">
+                        <h2>Anéis e Correntes Grossas - camada 17,5</h2>
+                    </div>
+                </div>
+                <div class="carousel-item" data-tab="argolas">
+                    <img src="images/argolas.jpg" alt="Argolas e Brincos sem Tarracha">
+                    <div class="carousel-caption">
+                        <h2>Argolas e Brincos sem Tarracha - camada 5,5</h2>
+                    </div>
+                </div>
+                <div class="carousel-item" data-tab="brincosTar">
+                    <img src="images/brincos-tarracha.jpg" alt="Brincos com Tarracha">
+                    <div class="carousel-caption">
+                        <h2>Brincos com Tarracha - camada 5,5</h2>
+                    </div>
+                </div>
+                <div class="carousel-item" data-tab="brincosInf">
+                    <img src="images/brincos-infantis.jpg" alt="Brincos Infantis">
+                    <div class="carousel-caption">
+                        <h2>Brincos Infantis - camada 5,5</h2>
+                    </div>
+                </div>
+                <div class="carousel-item" data-tab="pulseiras">
+                    <img src="images/pulseiras.jpg" alt="Pulseiras">
+                    <div class="carousel-caption">
+                        <h2>Pulseiras / Correntes - Camada 16,5</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="tabs">
+            <button class="tab-button active" data-tab="aneis">Anéis e Correntes Grossas - camada 17,5</button>
+            <button class="tab-button" data-tab="argolas">Argolas e Brincos sem Tarracha - camada 5,5</button>
+            <button class="tab-button" data-tab="brincosTar">Brincos com Tarracha - camada 5,5</button>
+            <button class="tab-button" data-tab="brincosInf">Brincos Infantis - camada 5,5</button>
+            <button class="tab-button" data-tab="pulseiras">Pulseiras / Correntes - Camada 16,5</button>
+        </div>
+
+        <!-- Anéis e Correntes Grossas -->
+        <div id="aneis" class="tab-content active">
+            <div class="calculator">
+                <h2>ANÉIS E CORRENTES GROSSAS - CAMADA 17,5 - OURO R$580</h2>
+                <div class="form-group">
+                    <label for="valor-aneis">Valor Bruto em R$:</label>
+                    <input type="number" id="valor-aneis" placeholder="Ex: 1,00" step="0.01">
+                </div>
+                
+                <div class="form-group">
+                    <label for="peso-aneis">Peso em g:</label>
+                    <input type="number" id="peso-aneis" placeholder="Ex: 1,00" step="0.01">
+                </div>
+
+                <button id="calcular-aneis">Calcular</button>
+                <button class="clear-btn">Limpar</button>
+
+                <div class="result" id="resultado-aneis"></div>
+                
+                <div class="history">
+                    <h3>Histórico:</h3>
+                    <div id="historico-aneis"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Argolas e Brincos sem Tarracha -->
+        <div id="argolas" class="tab-content">
+            <div class="calculator">
+                <h2>ARGOLAS E BRINCOS SEM TARRACHA - CAMADA 5,5 - OURO R$580</h2>
+                <div class="form-group">
+                    <label for="valor-argolas">Valor Bruto em R$:</label>
+                    <input type="number" id="valor-argolas" placeholder="Ex: 1,00" step="0.01">
+                </div>
+                
+                <div class="form-group">
+                    <label for="peso-argolas">Peso em g:</label>
+                    <input type="number" id="peso-argolas" placeholder="Ex: 1,00" step="0.01">
+                </div>
+
+                <button id="calcular-argolas">Calcular</button>
+                <button class="clear-btn">Limpar</button>
+
+                <div class="result" id="resultado-argolas"></div>
+                
+                <div class="history">
+                    <h3>Histórico:</h3>
+                    <div id="historico-argolas"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Brincos com Tarracha -->
+        <div id="brincosTar" class="tab-content">
+            <div class="calculator">
+                <h2>BRINCOS COM TARRACHA - CAMADA 5,5 - OURO R$580</h2>
+                <div class="form-group">
+                    <label for="valor-brincosTar">Valor Bruto em R$:</label>
+                    <input type="number" id="valor-brincosTar" placeholder="Ex: 1,00" step="0.01">
+                </div>
+                
+                <div class="form-group">
+                    <label for="peso-brincosTar">Peso em g:</label>
+                    <input type="number" id="peso-brincosTar" placeholder="Ex: 1,00" step="0.01">
+                </div>
+
+                <button id="calcular-brincosTar">Calcular</button>
+                <button class="clear-btn">Limpar</button>
+
+                <div class="result" id="resultado-brincosTar"></div>
+                
+                <div class="history">
+                    <h3>Histórico:</h3>
+                    <div id="historico-brincosTar"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Brincos Infantis -->
+        <div id="brincosInf" class="tab-content">
+            <div class="calculator">
+                <h2>BRINCOS INFANTIS - CAMADA 5,5 - OURO R$580</h2>
+                <div class="form-group">
+                    <label for="valor-brincosInf">Valor Bruto em R$:</label>
+                    <input type="number" id="valor-brincosInf" placeholder="Ex: 1,00" step="0.01">
+                </div>
+                
+                <div class="form-group">
+                    <label for="peso-brincosInf">Peso em g:</label>
+                    <input type="number" id="peso-brincosInf" placeholder="Ex: 1,00" step="0.01">
+                </div>
+
+                <button id="calcular-brincosInf">Calcular</button>
+                <button class="clear-btn">Limpar</button>
+
+                <div class="result" id="resultado-brincosInf"></div>
+                
+                <div class="history">
+                    <h3>Histórico:</h3>
+                    <div id="historico-brincosInf"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pulseiras - Correntes com Camada (15) -->
+        <div id="pulseiras" class="tab-content">
+            <div class="calculator">
+                <h2>PULSEIRAS - CORRENTES - CAMADA 16,5 - OURO R$580</h2>
+                <div class="form-group">
+                    <label for="valor-pulseiras">Valor Bruto em R$:</label>
+                    <input type="number" id="valor-pulseiras" placeholder="Ex: 1,00" step="0.01">
+                </div>
+                
+                <div class="form-group">
+                    <label for="peso-pulseiras">Peso em g:</label>
+                    <input type="number" id="peso-pulseiras" placeholder="Ex: 1,00" step="0.01">
+                </div>
+
+                <button id="calcular-pulseiras">Calcular</button>
+                <button class="clear-btn">Limpar</button>
+
+                <div class="result" id="resultado-pulseiras"></div>
+                
+                <div class="history">
+                    <h3>Histórico:</h3>
+                    <div id="historico-pulseiras"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Calculadora de Joias - Todos os direitos reservados - Desenvolvido por: Adriano Pereira</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
