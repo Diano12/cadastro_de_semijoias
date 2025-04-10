@@ -22,7 +22,7 @@
             position: relative;
             height: 300px;
             overflow: hidden;
-            background-color: var(--light-color);
+            background-color: var(--dark-color);
             color: var(--white);
             text-align: center;
             padding: 2rem;
